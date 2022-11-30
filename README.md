@@ -6,7 +6,7 @@
 
 A Dashboard for Pex
 
-[Access the Dashboard Here!](https://pex-oy6p5vmsl-gabsop.vercel.app/admin/default)
+[Access the Dashboard Here!](https://pex-web-gabsop.vercel.app/admin/default)
 
 ### Quick Start
 
