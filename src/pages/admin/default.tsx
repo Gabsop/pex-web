@@ -68,9 +68,9 @@ export default function UserReports() {
             <Flex
               w={{ sm: "100%", md: "auto" }}
               alignItems="center"
-              minW="644px"
+              minW={{ lg: "644px" }}
               justifyContent="space-between"
-              flexDirection="row"
+              flexDirection={{ base: "column", lg: "row" }}
               bg={menuBg}
               flexWrap={{ base: "wrap", md: "nowrap" }}
               p="10px"
@@ -78,9 +78,11 @@ export default function UserReports() {
               borderRadius="30px"
               boxShadow={shadow}
             >
-              <Text fontSize="sm" color="secondaryGray.600" ml="15px">
-                Filtrar por data
-              </Text>
+              <Flex gap="10px" alignItems="center" w="100%">
+                <Text fontSize="sm" color="secondaryGray.600" ml="15px">
+                  Filtrar por data
+                </Text>
+              </Flex>
               <Flex gap="10px">
                 <DatePicker
                   icon={
