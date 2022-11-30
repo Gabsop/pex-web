@@ -83,7 +83,11 @@ export default function UserReports() {
                   Filtrar por data
                 </Text>
               </Flex>
-              <Flex gap="10px">
+              <Flex
+                gap="10px"
+                w="100%"
+                flexDirection={{ base: "column", md: "row" }}
+              >
                 <DatePicker
                   icon={
                     <Icon
