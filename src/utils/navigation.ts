@@ -24,6 +24,11 @@ export const getActiveNavbar = (routes: IRoute[]): boolean => {
   return route?.secondary;
 };
 
+export const getSecondaryNameNavbar = (routes: IRoute[]): string => {
+  const route = findCurrentRoute(routes);
+  return route?.secondaryName;
+};
+
 export const getActiveNavbarText = (routes: IRoute[]): string | boolean => {
   return getActiveRoute(routes) || false;
 };
