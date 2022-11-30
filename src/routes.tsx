@@ -1,74 +1,67 @@
-import { Icon } from '@chakra-ui/react'
+import { Icon } from "@chakra-ui/react";
 import {
   MdBarChart,
   MdPerson,
   MdHome,
-  MdLock,
-  MdOutlineShoppingCart
-} from 'react-icons/md'
+  MdOutlineShoppingCart,
+  MdDashboard,
+} from "react-icons/md";
 
 // Admin Imports
-import MainDashboard from 'pages/admin/default'
-import NFTMarketplace from 'pages/admin/nft-marketplace'
-import Profile from 'pages/admin/profile'
-import DataTables from 'pages/admin/data-tables'
-import RTL from 'pages/rtl/rtl-default'
+import MainDashboard from "pages/admin/default";
+import Vendas from "pages/admin/vendas";
 
 // Auth Imports
-import SignInCentered from 'pages/auth/sign-in'
-import { IRoute } from 'types/navigation'
+import { IRoute } from "types/navigation";
+import Relatorios from "pages/admin/relatorios";
+import LojasParceiras from "pages/admin/lojas-parceiras";
+import Clientes from "pages/admin/clientes";
 
 const routes: IRoute[] = [
   {
-    name: 'Main Dashboard',
-    layout: '/admin',
-    path: '/default',
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: MainDashboard
+    name: "Dashboard",
+    secondaryName: "Velty Dashboard",
+    layout: "/admin",
+    path: "/default",
+    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
+    component: MainDashboard,
   },
   {
-    name: 'NFT Marketplace',
-    layout: '/admin',
-    path: '/nft-marketplace',
+    name: "Vendas",
+    layout: "/admin",
+    path: "/vendas",
     icon: (
       <Icon
         as={MdOutlineShoppingCart}
-        width='20px'
-        height='20px'
-        color='inherit'
+        width="20px"
+        height="20px"
+        color="inherit"
       />
     ),
-    component: NFTMarketplace,
-    secondary: true
+    component: Vendas,
+    secondary: true,
   },
   {
-    name: 'Data Tables',
-    layout: '/admin',
-    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
-    path: '/data-tables',
-    component: DataTables
+    name: "Relatórios",
+    layout: "/admin",
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: "/relatorios",
+    component: Relatorios,
   },
   {
-    name: 'Profile',
-    layout: '/admin',
-    path: '/profile',
-    icon: <Icon as={MdPerson} width='20px' height='20px' color='inherit' />,
-    component: Profile
+    name: "Lojas Parceiras",
+    layout: "/admin",
+    path: "/lojas-parceiras",
+    icon: <Icon as={MdDashboard} width="20px" height="20px" color="inherit" />,
+    component: LojasParceiras,
   },
   {
-    name: 'Sign In',
-    layout: '/auth',
-    path: '/sign-in',
-    icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
-    component: SignInCentered
+    name: "Clientes",
+    layout: "/admin",
+    path: "/clientes",
+    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
+    component: Clientes,
   },
-  {
-    name: 'RTL Admin',
-    layout: '/rtl',
-    path: '/rtl-default',
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: RTL
-  }
-]
+];
 
-export default routes
+export default routes;
