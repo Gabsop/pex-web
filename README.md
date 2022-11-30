@@ -6,6 +6,8 @@
 
 A Dashboard for Pex
 
+[Access the Dashboard Here!](https://pex-oy6p5vmsl-gabsop.vercel.app/admin/default)
+
 ### Quick Start
 
 Clone the repository with the following command:
