@@ -47,11 +47,14 @@ export const globalStyles = {
     },
     red: {
       100: "#FEEFEE",
+      300: "#EC7A7A",
       500: "#EE5D50",
       600: "#E31A1A",
+      700: "#CD0505",
     },
     blue: {
       50: "#EFF4FB",
+      100: "#7A85EC",
       500: "#3965FF",
     },
     orange: {
@@ -60,6 +63,8 @@ export const globalStyles = {
     },
     green: {
       100: "#E6FAF5",
+      200: "#65D4AC",
+      300: "#05CD99",
       500: "#01B574",
     },
     navy: {
@@ -76,6 +81,10 @@ export const globalStyles = {
     },
     gray: {
       100: "#FAFCFE",
+      500: "#3C3C3B",
+    },
+    semiTransparent: {
+      700: "#ffffffb3",
     },
   },
   styles: {
