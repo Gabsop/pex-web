@@ -1,0 +1,22 @@
+[
+  {
+    "clube": "6 vendas",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  },
+  {
+    "clube": "12 vendas",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  },
+  {
+    "clube": "24 vendas",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  },
+  {
+    "clube": "Personalizado",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  }
+]

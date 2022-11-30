@@ -1,0 +1,22 @@
+[
+  {
+    "clube": "Estagiários",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  },
+  {
+    "clube": "Diretoria",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  },
+  {
+    "clube": "Geral",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  },
+  {
+    "clube": "Almoxarifado",
+    "clientes": "312 clientes",
+    "preco_medio": "R$ 123,90"
+  }
+]

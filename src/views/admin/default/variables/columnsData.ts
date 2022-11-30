@@ -1,56 +1,31 @@
 import { Column } from "react-table";
-import tableDataCheck from "./tableDataCheck.json";
 
-export const columnsDataCheck = [
-  {
-    Header: "NAME",
-    accessor: "name",
-  },
-  {
-    Header: "PROGRESS",
-    accessor: "progress",
-  },
-  {
-    Header: "QUANTITY",
-    accessor: "quantity",
-  },
-  {
-    Header: "DATE",
-    accessor: "date",
-  },
-];
 export const columnsDataComplex = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "Clube",
+    accessor: "clube",
   },
   {
-    Header: "STATUS",
-    accessor: "status",
+    Header: "Clientes",
+    accessor: "clientes",
   },
   {
-    Header: "DATE",
-    accessor: "date",
-  },
-  {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "Preço Médio",
+    accessor: "preco_medio",
   },
 ];
 
 export type ColumnData = Column[];
 
 export type TableData = Column<{
-  name: (string | boolean)[];
-  date: string;
-  progress: number;
-  quantity?: number;
-  status?: string;
-  artworks?: string;
-  rating?: number;
+  clube: string;
+  // clientes: string;
+  // preco_medio: string;
 }>;
 
 export type TableProps = {
+  title: string;
+  secondaryTitle?: string;
   columnsData: ColumnData;
   tableData: TableData[];
 };
